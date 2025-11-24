@@ -1,6 +1,7 @@
 //callApi
 //export const BASEURL = "http://localhost:8081/";
-export const BASEURL = "http://backend:8081/";
+//export const BASEURL = "http://backend:8081/";
+export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://foodrecipie-backend:8080";
 export function callApi(reqmethod, url, data, responseHandler)
 {
     let option = "";
